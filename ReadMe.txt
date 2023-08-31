@@ -12,7 +12,7 @@ Using Setup.exe:
 Using Manual Install:
 -If you are worried about NTOSKERNAL errors, you may bypass the installation of ntoskrnl.exe
  by manually copying the files and avoiding ntoskrnl.exe and ntkrnlpa.exe, all files included
- in the installer are in the provided WINDOWS folder. Copy what's in the root directory of 
+ in the installer are in the provided WINDOWS.zip folder. Copy what's in the root directory of 
  said WINDOWS folder to your WinXP C:\Windows\ and what is in the System32 folder to your 
  C:\Windows\System32\ 
 
