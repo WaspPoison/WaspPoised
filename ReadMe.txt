@@ -6,7 +6,7 @@ including OEM Windows 2000 banners for logon\winver.
 System Properties will display Microsoft Windows 2000 5.00.2195 <servicepack#> 
 DO NOT USE ON ANY OTHER WINDOWS VERSION EXCEPT XP
 
-Using Setup.exe:
+Using .exe install:
 -Run Setup.exe, select your Windows XP c:/windows/, open newfound windows folder in c:\windows\windows\ 
 -keep one explorer window at c:\windows\windows open, and another window at c:\windows\
 -move c:\windows\explorer.exe to desktop, move c:\windows\windows\explorer.exe to c:\windows\
@@ -22,6 +22,6 @@ Using .zip Install:
  C:\Windows\System32\ 
 
 [if when running the installer you select c:\, this should move the file write process to overwrite the system files, but 
-the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using Setup.exe:')] 
+the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using .exe: install')] 
 
  -Juicifer/WaspPoison
