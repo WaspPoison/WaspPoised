@@ -22,6 +22,6 @@ Using .zip Install:
  C:\Windows\System32\ 
 
 [if when running the installer you select c:\, this should move the file write process to overwrite the system files, but 
-the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using .exe: install')] 
+the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using Win2K CPL Port WinXP v1.exe: install')] 
 
  -Juicifer/WaspPoison
