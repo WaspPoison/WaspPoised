@@ -21,6 +21,7 @@ Using .zip Install:
  said WINDOWS folder to your WinXP C:\Windows\ and what is in the System32 folder to your 
  C:\Windows\System32\ 
 
-[if when running the installer you select c:\, this should move the file write process to overwrite the system files, but the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using Setup.exe:') 
+[if when running the installer you select c:\, this should move the file write process to overwrite the system files, but 
+the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using Setup.exe:')] 
 
  -Juicifer/WaspPoison
