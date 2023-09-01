@@ -1,8 +1,7 @@
 WINDOWS 2000 PROFESSIONAL CONTROL PANEL PORT, BOOT, & BANNERS README:
 ------------------------------------------------------------------------------------
 
-In Windows XP, Setup.exe installs the Windows 2000 .cpl files,  updates your NTOSKRNL for an integrated Windows 2000 Professional bootscreen (v1.0), replaces your start menu banner with Windows 2000 Professional, Overwrites your Winver NT version as 5.0 (Build 2195) 
-including OEM Windows 2000 banners for logon\winver. 
+including OEM Windows 2000 banners for logon\winver\start, edited winver display of Version 5.0 (Build 2195). 
 System Properties will display Microsoft Windows 2000 5.00.2195 <servicepack#> 
 DO NOT USE ON ANY OTHER WINDOWS VERSION EXCEPT XP
 
