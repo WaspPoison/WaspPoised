@@ -6,7 +6,7 @@ including OEM Windows 2000 banners for logon\winver.
 System Properties will display Microsoft Windows 2000 5.00.2195 <servicepack#> 
 DO NOT USE ON ANY OTHER WINDOWS VERSION EXCEPT XP
 
-Using .exe install:
+Using Win2K CPL Port WinXP v1.exe install:
 -Run Win2K CPL Port WinXP v1.exe, select your Windows XP c:/windows/, open newfound windows folder in c:\windows\windows\ 
 -keep one explorer window at c:\windows\windows open, and another window at c:\windows\
 -move c:\windows\explorer.exe to desktop, move c:\windows\windows\explorer.exe to c:\windows\
