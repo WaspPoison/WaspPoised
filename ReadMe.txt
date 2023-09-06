@@ -25,8 +25,10 @@ Using .zip Install:
 -all files included in the installer are in the provided WINDOWS.zip folder. Copy what's in the root directory of 
  said WINDOWS folder to your WinXP C:\Windows\ and what is in the System32 folder to your 
  C:\Windows\System32\ 
+-Use the same 'one at a time and in short time frame method' detailed in the .exe install process, where you move the file you intend to replace to your desktop, then move the corresponding file in the .zip to where the moved file on your desktop once was. 
+   ex. move C:\Windows\Explorer.exe to desktop, move [.zip]\Windows\explorer.exe to C:\Windows\; repeat with C:\Windows\System32\ and [.zip]\Windows\System32
 
 [if when running the installer you select c:\, this should move the file write process to overwrite the system files, but 
-the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 9 'Using Win2K CPL Port WinXP v1.exe: install')] 
+the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 14 'Using Win2K CPL Port WinXP v1.exe: install')] 
 
  -Juicifer/WaspPoison
