@@ -6,7 +6,7 @@ System Properties will display Microsoft Windows 2000 5.00.2195 <servicepack#>
 DO NOT USE ON ANY OTHER WINDOWS VERSION EXCEPT XP
 
 -If using bootskin or are prone to ntoskrnl bsod errors and don't want to deal with that again, don't copy ntoskrnl.exe and ntoskrnlpa.exe. They do work for 
- me, but I understand the fear because of how easily to ntoskrnl.exe files in Windows trip a BSOD for seemingly no reason. Just my warning that these two files are the only 
+ me, but I understand the fear because of how easily the ntoskrnl.exe files in Windows trip a BSOD for seemingly no reason. Just my warning that these two files are the only 
  files included that COULD brick your system, but if you skip them I'd say you should have a 100% success rate with installing the .cpls and everything else, you can save 
  patching ntoskrnl for later. Optimally you should open your native ntoskrnl in resource hacker and replace the bitmaps, you can simply follow my ntoskrnl bitmap layout. Just 
  extract a .res file from the included ntoskrnl and replace the ones in yours (in safe mode) 
