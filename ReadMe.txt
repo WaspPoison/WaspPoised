@@ -35,4 +35,4 @@ disabling Windows File Protection:
    see if Cryptographic Services has started again, as this is the main 
    cause 
 
- -Juicifer/WaspPoison
+ -WaspPoison
