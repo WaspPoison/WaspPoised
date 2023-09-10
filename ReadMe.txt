@@ -1,34 +1,38 @@
-WINDOWS 2000 PROFESSIONAL CONTROL PANEL PORT, BOOT, & BANNERS README:
+WINDOWS 2000 PROFESSIONAL CONTROL PANEL PORT README:
 ------------------------------------------------------------------------------------
+INSTALLER V2 INSTALLATION INSTRUCTIONS:
+ -Run WaspPoisedNT5CPL_v2.exe
+ -Select path of your HDD if not C:\ (Should be by default c:\)
+ -click 'install'
+ -If wuaucpl.cpl gives any problems, hit ignore
+ -install complete if Windows File Protection was disabled
 
-including OEM Windows 2000 banners for logon\winver\start, edited winver display of Version 5.0 (Build 2195). 
-System Properties will display Microsoft Windows 2000 5.00.2195 <servicepack#> 
-DO NOT USE ON ANY OTHER WINDOWS VERSION EXCEPT XP
+wuaucpl.cpl fix:
+  -Navigate to c:\windows\system32\
+  -move native wuaucpl.cpl to your desktop
+  -Run WaspPoisedNT5CPL_v2.exe and complete installation
 
--If using bootskin or are prone to ntoskrnl bsod errors and don't want to deal with that again, don't copy ntoskrnl.exe and ntoskrnlpa.exe. They do work for 
- me, but I understand the fear because of how easily the ntoskrnl.exe files in Windows trip a BSOD for seemingly no reason. Just my warning that these two files are the only 
- files included that COULD brick your system, but if you skip them I'd say you should have a 100% success rate with installing the .cpls and everything else, you can save 
- patching ntoskrnl for later. Optimally you should open your native ntoskrnl in resource hacker and replace the bitmaps, you can simply follow my ntoskrnl bitmap layout. Just 
- extract a .res file from the included ntoskrnl and replace the ones in yours (in safe mode) 
-
-Using Win2K CPL Port WinXP v1.exe install:
--Run Win2K CPL Port WinXP v1.exe, select your Windows XP c:/windows/, open newfound windows folder in c:\windows\windows\ 
--keep one explorer window at c:\windows\windows open, and another window at c:\windows\
--move c:\windows\explorer.exe to desktop, move c:\windows\windows\explorer.exe to c:\windows\
--Navigate to c:\windows\system32\ in one window, and to c:\windows\windows\system32 in another
--One at a time & in short time frame between moving file to desktop, then moving the replacement file is the most effective way  
--follow the procedure you did with explorer.exe, except with the files found in c:\windows\windows\system32
-   ex: move access.cpl from c:\windows\system32 to desktop, in small time frame move c:\windows\windows\system32\access.cpl to c:\windows\system32\
-       continue this pattern with the rest of the files in c:\windows\windows\system32 ONE AT A TIME, with proper care for bypassing windows file protection taken
-
-Using .zip Install:
--all files included in the installer are in the provided WINDOWS.zip folder. Copy what's in the root directory of 
- said WINDOWS folder to your WinXP C:\Windows\ and what is in the System32 folder to your 
- C:\Windows\System32\ 
--Use the same 'one at a time and in short time frame method' detailed in the .exe install process, where you move the file you intend to replace to your desktop, then move the corresponding file in the .zip to where the moved file on your desktop once was. 
-   ex. move C:\Windows\Explorer.exe to desktop, move [.zip]\Windows\explorer.exe to C:\Windows\; repeat with C:\Windows\System32\ and [.zip]\Windows\System32
-
-[if when running the installer you select c:\, this should move the file write process to overwrite the system files, but 
-the installer v1.0 fails to do so, working on a v2.0, but in the meantime you can still use it, just a lot more hands on of a process (see line 14 'Using Win2K CPL Port WinXP v1.exe: install')] 
+disabling Windows File Protection:
+  -press win key + R
+  -run 'regedit'
+  -navigate to HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Windows NT/Current Version/Winlogon
+  -In the right hand pane find 'SFCDisable' (REG_DWORD Value)
+  -open/double-click SFCDisable
+  -Change the value data to '1'
+  -reboot
+  -open services.msc in run (Win Key + R)
+  -disable Cryptographic Services and stop the service
+  -disable Protected Storage and stop the service
+    [watch the services.msc page routinely for a minute or two, the 
+    Cryptographic Services service might start up again very quickly despite 
+    being disabled, just stop the service again and eventually it won't 
+    start again]
+  -go to c:\windows\system32
+  -move dllcache folder to your desktop, this is a hidden folder
+  -hit serch files, search 'SFC'
+  -delete SFC.exe sfcfiles.dll and sfc.dll
+  -if windows file protection rewrites these files, check services.msc to 
+   see if Cryptographic Services has started again, as this is the main 
+   cause 
 
  -Juicifer/WaspPoison
